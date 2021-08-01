@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #793347;
+}
+.main-container .background {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 450px;
+  background: url("../recursos/bg-andador.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.main-container .background .about-me {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  padding: 30px 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.main-container .background .about-me__img {
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border: 5px solid white;
+  border-radius: 99px;
+}
+.main-container .background .about-me__name {
+  text-align: center;
+  margin: 20px 0px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  color: #ffbc5f;
+}
+.main-container .background .about-me__location {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: white;
+}
+
+/*# sourceMappingURL=estilos.css.map */
