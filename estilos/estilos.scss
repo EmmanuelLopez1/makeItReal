@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
 * {
   margin: 0px;
   padding: 0px;
 }
 
 //FUENTES
-$Quicksand:'Quicksand', sans-serif;
-
+$Quicksand: "Quicksand", sans-serif;
 
 $purple: #552541;
 $wine: #793347;
@@ -14,19 +13,17 @@ $brown: #ab4e50;
 $durazno: #e77a58;
 $yellow: #ffbc5f;
 
-$bgUrl: "https://www.lifeder.com/wp-content/uploads/2017/08/Guadalajara-Jalisco-Mexico-lifeder-min-1024x539.jpg";
-
 .main-container {
   width: 100vw;
   height: 100vh;
-  display:flex;
+  display: flex;
   align-items: center;
   background-color: $wine;
   .background {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 450px;
+    height: 800px;
     background: url("../recursos/bg-andador.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -34,9 +31,9 @@ $bgUrl: "https://www.lifeder.com/wp-content/uploads/2017/08/Guadalajara-Jalisco-
     .about-me {
       width: 80%;
       height: auto;
-      margin:auto;
+      margin: auto;
       padding: 30px 0px;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.4);
       border-radius: 10px;
 
       &__img {
@@ -52,14 +49,50 @@ $bgUrl: "https://www.lifeder.com/wp-content/uploads/2017/08/Guadalajara-Jalisco-
         margin: 20px 0px;
         font-family: $Quicksand;
         font-weight: 600;
-        color: $yellow ;
+        color: $yellow;
       }
       &__location {
         text-align: center;
         font-family: $Quicksand;
         font-weight: 600;
         font-size: 28px;
-        color:white;
+        color: white;
+      }
+      .video {
+        width: 200px;
+        height: 150px;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .main-container {
+    .background {
+      .about-me {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-container {
+    .background {
+      width: 80%;
+      margin: auto;
+      border-radius: 10px;
+      .about-me {
+        width: 50%;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .main-container {
+    .background {
+      .about-me {
+        width: 40%;
       }
     }
   }

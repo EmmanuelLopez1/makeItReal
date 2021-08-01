@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  height: 450px;
+  height: 800px;
   background: url("../recursos/bg-andador.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -26,7 +26,7 @@
   height: auto;
   margin: auto;
   padding: 30px 0px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
 }
 .main-container .background .about-me__img {
@@ -50,6 +50,31 @@
   font-weight: 600;
   font-size: 28px;
   color: white;
+}
+.main-container .background .about-me .video {
+  width: 200px;
+  height: 150px;
+}
+
+@media (min-width: 600px) {
+  .main-container .background .about-me {
+    width: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  .main-container .background {
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .main-container .background .about-me {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .main-container .background .about-me {
+    width: 40%;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
